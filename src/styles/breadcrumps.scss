@@ -1,0 +1,52 @@
+.breadcrumb {
+
+    // .breadcrumb__navigation
+
+    &__navigation {
+        
+        color: #969eae;
+        padding: 24px 0;
+
+        @media (min-width: 768px) {
+            padding: 32px 0;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 40px 0;
+        }
+    }
+
+    // .breadcrumb__list
+
+    &__list {
+        position: relative;      
+     
+        display: flex;
+        gap: 18px;
+       
+    }
+
+    // .breadcrumb__item
+
+    &__item {
+        &:not(:last-child) {
+          
+            &::after {
+                position: absolute;
+                content:">";
+                width: 12px;
+                top: 50%;
+                margin-left: 6px;                
+                transform: translateY(-50%);                      
+            } 
+        }
+    }
+
+    // .breadcrumb__link
+
+    &__link {
+       
+           
+    }
+}
+
