@@ -1,0 +1,120 @@
+.goods {
+
+    // .goods__title
+
+    &__title {
+    }
+
+    // .goods__list
+
+    &__list {
+    }
+
+    // .goods__item
+
+    &__item {
+    }
+
+    // .goods__card
+
+    &__card {
+       
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    // .card__link
+
+    &__link {
+        margin-bottom: 12px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 19px;
+        }
+        @media (min-width: 1024px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    // .card__image
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+       
+    }
+
+    // .card__like-button
+
+    &__like-button {
+        position: absolute;
+        content: "";
+        top: 12px;
+        right: 12px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        gap: 18px;
+        color: #1c1c1c;
+        
+
+        @media (min-width: 768px) {
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: end;
+           margin-bottom: 37px;
+        }
+        @media (min-width: 1024px) {
+           
+            margin-bottom: 18px;
+         }
+    }
+    // .card__title
+
+    &__info-title {
+        font-size: 12px;
+        font-weight: 400;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+         }
+    }
+
+    // .card__price
+
+    &__info-price {
+        font-size: 16px;
+        font-weight: 400;
+        @media (min-width: 768px) {
+            font-size: 20px;
+         }
+    }
+
+    // .card__button
+
+    &__button {
+        border: 1px solid #0044f0;
+        color: #0044f0;
+        border-radius: 32px;
+        padding: 12px 24px;
+
+        &:hover {
+            background-color: #0044f0;
+            color: #fff;
+        }
+        &:focus {
+            border: 1px solid #042f9c;
+        }
+        &:disabled {
+            border: 1px solid #0044f0;
+            opacity: .2;
+        }
+    }
+}
