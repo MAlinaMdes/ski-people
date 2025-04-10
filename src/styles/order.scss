@@ -1,0 +1,130 @@
+.order {
+
+    &__container {
+        margin: 0 auto;
+        @media (min-width: 768px) {
+            max-width: 710px;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: 726px;
+            
+            
+        }
+        @media (min-width: 1440px) {
+            max-width: 832px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 8px;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            
+        }
+
+    }
+    &__box-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: #1c1c1c;
+        
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+            
+            
+        }
+    }
+    // .order__price
+
+    &__box-price {
+        font-size: 16px;
+        font-weight: 400;
+        color: #1c1c1c;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+            
+        }
+    }
+
+    // .order__id
+
+    &__id {
+        margin-bottom: 20px;
+        padding: 4px 8px;
+        background-color: #eeeff2;
+        border-radius: 32px;
+        display: inline-block;
+
+        @media (min-width: 768px) {
+            margin-bottom: 24px;
+            
+        }
+    }
+
+    // .order__info-title
+
+    &__info-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: #1c1c1c;
+        margin-bottom: 4px;
+    }
+
+   
+
+    // .order__table
+
+    &__table {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    // .order__table-row
+
+    &__table-row {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eeeff2;
+    }
+
+    // .order__table-item
+
+    &__table-item {
+        font-size: 12px;
+        color: #969eae;
+        padding: 8px 0;
+        &:last-child {
+            color:#1c1c1c ;
+        }
+    }
+
+    // .order__button
+
+    &__button {
+        border-radius: 32px;
+        background-color: #0044f0;
+        border: 1px solid #0044f0;
+        color:#fff;
+        padding: 12px 24px;
+        
+        width: 100%;
+        :hover {
+            background-color:  #0945de;
+        }
+        :active {
+            background-color: #0044f0;
+        }
+        :disabled {
+            opacity: .2;
+        }
+    }
+}
+
